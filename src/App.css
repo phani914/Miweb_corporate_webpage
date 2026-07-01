@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    min-height:100%;
+    overflow-x:hidden;
+}
+
+body{
+    background:#071a2d;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#071c34;
+    z-index:9999;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar-wrapper{
+    width:95%;
+    max-width:1400px;
+    height:80px;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar-logo{
+    color:#18b8ff;
+    font-size:34px;
+    font-weight:800;
+}
+
+.navbar-menu{
+    display:flex;
+    gap:30px;
+}
+
+.navbar-menu a{
+    color:#ffffff;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar-menu a:hover{
+    color:#18b8ff;
+}
+
+@media(max-width:1200px){
+
+.navbar-logo{
+font-size:28px;
+}
+
+.navbar-menu{
+gap:18px;
+}
+
+.navbar-menu a{
+font-size:14px;
+}
+
+}
