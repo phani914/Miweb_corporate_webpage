@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>career section</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 10px;
+            }
+
+            body {
+                background-color: rgb(49, 131, 131);
+                color:black;
+            }
+
+            .career-header {
+                
+                background-color: antiquewhite;
+                color: black;
+                padding: 15px 
+
+            }
+
+            .career-hero {
+                margin-top: 10px;
+                background-color: aliceblue;
+                background-image: url('C:\Users\ADMIN\codes office\logo1.jpg');
+                background-size: cover;
+                background-position: center;
+                align-items: center;
+                text-align: center;
+                color:black;
+            }
+
+            .career-hero-content {
+                background-color: beige;
+                padding: 40px;
+                border-radius: 10px;
+
+            }
+            .container{
+                padding-left: 10px;
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: larger;
+                margin-bottom: 50px;
+                color: black;
+            }
+
+        
+            .job-meta span {
+                display: flex;
+                align-items: center;
+                gap:5px;
+            }
+
+            .apply-btn {
+                background-color: black;
+                color: aliceblue;
+                border: 10px;
+                cursor: pointer;
+                
+            }
+
+            .job-meta {
+    
+                padding-left: 10px;
+            }
+
+            .job-me{
+                padding-left: 10px;
+            }
+
+            .job-desk{
+                padding-left: 20px;
+            }
+            .job-title{
+                padding-left: 20px;
+
+            }
+
+            .job-tags3{
+                padding-left: 10px;
+            }
+
+            .job-tags4{
+                padding-left: 10px;
+            }
+
+            .apply-btn3{
+                background-color: black;
+                color: white;
+                padding-left: 20px;
+                border: 10px;
+                cursor: pointer;
+            }
+
+            .apply-btn4{
+                padding-left: 20px;
+                background-color: black;
+                color: white;
+                border: 10px;
+                cursor: pointer;
+            }
+           .application-form button {
+            position: relative;
+            z-index: 10;
+            border: 10px;
+            background-color: grey;
+           }
+
+            .application-model {
+                display: none;
+                position: fixed;
+                top: 0;
+                left:0;
+                width:100%;
+                height:100%;
+                background-color: beige;
+                z-index: 200;
+                align-items: center;
+                justify-content: center;
+            }
+            .application-model.active {
+                display:flex;
+            }
+            .form-group {
+                background-color: rgb(212, 209, 209);
+                text-align: center;
+                border: 10px;
+                border-color: aliceblue;
+            }
+            .apply-btn {
+                padding-left: 20px;
+            }
+            .demo {
+                height:50px;
+                width: 50px;
+                margin-top: 0;
+                margin-left: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header class="career-header">
+            <h1>MI WEB Carrers</h1>
+            <img class="demo" src="C:\Users\ADMIN\codes office\logo1.jpg" rel="stylesheet">
+        </header>
+
+        <section class="career-hero">
+            <div >
+                <h2>Join Our Team</h2>
+                <p>Build the future of technology with us</p>
+            </div>
+        </section>
+        <br>
+
+        <div class="container">
+            <div class="job">
+                <h3 class="job-title">Senior Java Developer</h3>
+                <div class="job-meta">
+                    <span>location: pune</span>
+                    <span>job-type: Full-time</span>
+                    <span>experience: 3-5 years</span>
+                </div>
+                <p class="job-desk">Looking for java experts with spring boot, microservices, and REST API experience.</br>
+                    work on enterprise-level products for global clients.
+                </p>
+
+                <div class="job-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">AWS</span>
+                </div>
+                <button class="apply-btn" onclick="openForm('Senior Java Developer')">Apply Now</button>
+            </div>
+            <br>
+            <hr>
+            <div class="job">
+                <h3 class="job-title">Python Developer</h3>
+                <div class="job-meta"></div>
+                <span> location: remote</span><br>
+                <span> job-type: full-time</span><br>
+                <span>Experience: 0-2 years</span>
+            </div>
+            <p class="job-desk">Looking for python experts known with all the related technologies required.</p>
+
+            <div class="job-tags">
+                <span class="tag">python</span>
+                <span class="tag">react</span>
+                <span class="tag">angular</span>
+            </div>
+            <button class="apply-btn" onclick="openForm('Python Developer')">Apply Now</button>
+            </div>
+            <br>
+            <hr>
+
+
+            <div class="job">
+                <h3 class="job-title">Frontend Developer- React</h3>
+                <div class="job-me">
+                <span> location: Remote</span>
+                <span> Job-type: Full-time</span>
+                <span>Experience: 1-2 years</span>
+            </div>
+            <p class="job-desk">Build beautiful, responsive UIs using React, TypeScript, and modern CSS.</br>
+                Experience with redux and next.js preferred.
+            </p>
+
+            <div class="job-tags3">
+                <span class="tag">React</span>
+                <span class="tag">Typescript</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Redux</span>
+            </div>
+            <button class="apply-btn3" onclick="openForm('Frontend Developer')">Apply Now</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class="job">
+            <h3 class="job-title">Cloud DevOps Engineer</h3>
+            <div class="job-me">
+                <span>location: Banglore</span>
+                <span>Job-type: Full-time</span>
+                <span>Experience: 4-5 years</span>
+            </div>
+            <p class="job-desk">Manage cloud infrastructure, CI/CD pipelines, and kubernetes clusters.</br>
+                Strong AWS/Azure experience required.
+
+            </p>
+
+            <div class="job-tags4">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">kubernetes</span>
+                <span class="tag">Jenkins</span>
+            </div>
+            <button class="apply-btn4" onclick="openForm('Cloud DevOps Engineer')">Apply Now</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="application-model" id="applicationmodel">
+    <div class="application-form">
+        <span class="close-btn" onclick="closeForm()"></span>
+        <h2> Apply for <span id="jobTitle"></span></h2>
+        <div id="successMsg" style="display:none; background-color:black; color:white; text-align:center;">application submitted successfully</div>
+
+        <form id="careerForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+                <div class="form-group">
+
+                  <p> first name: <input type="text" placeholder="first name" required> </p><br>
+                   <p>last name: <input type="text" placeholder="last name" required> </p> <br>
+                  <p> email:      <input type="email" placeholder="email" required> </p><br>
+                  <p> number:     <input type="number" placeholder="mobile number" required> </p><br>
+                   <p>location:   <input type="text" placeholder="location" required></p><br>
+                  <p> experience: <select required>
+                        <option value=""></option>
+                        <option>fresher</option>
+                        <option>0-1 years</option>
+                        <option>1-3 years</option>
+                        <option>3-5 years</option>
+                        <option>5+ years</option>
+                    </select></p><br>
+                   <p> resume:<input type="file" accept=".pdf, .doc, .docx" required></p><br>
+                   <p> <textarea rows="5" placeholder="tell us about yourself..."></textarea></p><br>
+                
+                <button type="submit">submit application</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openForm(jobTitle) {
+        document.getElementById('jobTitle').innerText=jobTitle;
+
+        document.getElementById('applicationmodel').classList.add('active');
+    }
+
+    function closeForm() {
+        document.getElementById('applicationmodel').classList.remove('active');
+        document.getElementById('careerForm').reset();
+    }
+
+    function submitForm(e) {
+        e.preventDefault();
+
+        document.getElementById('successMsg').style.display='block';
+        setTimeout(()=> {
+            closeForm();
+        }, 2000);
+    }
+    window.onclick=function(event) {
+        const model=document.getElementById('applicationmodel');
+        if (event.target == model) {
+            closeForm();
+        }
+    }
+</script>
+    </body>
+</html>
